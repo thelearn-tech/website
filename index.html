@@ -302,13 +302,13 @@ I am still learning python.I make programs for <b>Linux</b> and <b>Termux</b> ON
 <!-- js to set Cookie -->
    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
    <script>
-        var myCookie = Cookies.get('chocolatechip')
+        var myCookie = Cookies.get('DesktopRequested')
 
         if (myCookie){
                 console.log("true");
 
         } else {
-                Cookies.set('chocolatechip', 'true', { expires: 7 });
+                Cookies.set('DesktopRequested', 'true', { expires: 7 });
                
                  window.onload=function(){
                 var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
