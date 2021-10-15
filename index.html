@@ -300,8 +300,22 @@ I am still learning python.I make programs for <b>Linux</b> and <b>Termux</b> ON
     "W3.CSS" target="_blank" class="w3-hover-text-green">w3.css </a><h> & </h> <a href="https://ipify.org" title="Ip-api" target="_blank" class="w3-hover-text-green"> ipify</a></p> <h class="w3-center"><em>Requested from </em></h><h id="usrip"></h> <a href="https://thelearn-tech.github.io/website/client-details.html" title="client-details" target="_self" class="w3-hover-text-green">  details?</a>
 
 </footer>
-<!-- js to set Cookie -->
+<!-- js to set Cookies -->
    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+   <script>
+        var myCookie = Cookies.get('cookiePopup')
+        if (myCookie){
+                console.log("true");
+
+        } else {
+
+               Cookies.set('cookiePopup', 'true',{ expires: 7 });
+
+               alert("This site uses Cookies 🍪");
+
+        }
+  </script>
+   
    <script>
         var myCookie = Cookies.get('DesktopRequested')
 
