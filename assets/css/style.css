@@ -1,0 +1,283 @@
+ 
+/* This is going to look very similar to what was before
+as use w3.css as inspiration and made it the way I like it. */
+
+
+/*   V1    */
+
+body {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  background-color: #262626;
+  color: #DCDCDC;
+}
+
+
+/* top nav */
+
+#topNav {
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: black;
+}
+
+.topNavItems {
+  float: left;
+  color: #565656;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topNavItems:hover { 
+  background-color: #ddd;
+  color: black;
+}
+
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+/* end of nav bar */
+
+/* slide bar */
+
+.sideNav {
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+
+.menuIcon {
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+  font-size: 30px;
+  color: white;
+}
+
+.closeIcon {
+  float: right;
+  margin-right: 6px;
+  margin-top: 4px;
+  font-size: 29px;
+  padding: 8px 8px 8px 8px;
+}
+
+#sideMenuItemsHolder {
+  right: 0;
+  top: 0;
+  width: 250px;
+  height: 240px;
+  color: #DDDDDD;  
+  transition: 0.5s;
+  position: fixed;
+  overflow-x: hidden;
+  background-color: #2B2B2B; 
+}
+
+.sideNavItems {
+  padding: 10px 8px 12px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #E5E5E5;
+  display: block;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+/* end slide bar */
+ 
+
+
+/* Home */
+
+.home-bgimg {
+  height: 350px; 
+  width: 265px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/assets/img/eagle_logo.png);
+}
+
+#display-logo-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  white-space:nowrap;
+  animation: opac 0.8s;
+}
+
+@media (max-width: 767px) {#display-logo-middle {
+  top: 35%;
+}}
+
+
+.logoText {
+  color: white;
+  font-size: 24px;
+  letter-spacing: 10px;
+  padding: 12px 24px;
+  background-color: #444444;
+
+}
+
+/* end Home */
+
+/* about */
+
+.keyword {
+  color: white;
+  font-family: monospace;
+  border: 1px solid #4100C1;
+  padding: 2px;
+  border-radius: 5px;
+  padding-right: 5px;
+  /*background-color: #1DD171; */
+}
+
+
+.stat-holder {
+  width: 500px;
+  height: 90px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #141321;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-holder-mobile {
+  width: 300px;
+  height: 120px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #141321;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-text {
+  color: #9ae8e3;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-right: auto;
+  font-size: 19px;
+}
+
+/* end about */
+
+
+/* featured  */
+
+.ft-repo {
+  color: #00A4F1;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-left: 50px;
+}
+
+/*end featured*/
+
+/* contact */
+
+.hold-left {
+  margin-left: 35%;
+}
+
+.mail-input {
+  height: 35px;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 2px;
+  color: white;
+  background-color: #242222;
+}
+
+.send-btn {
+  margin-left: 60%;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid #101010;
+  color: white;
+  background-color: #101010;
+}
+/* end contact */
+
+
+/* footer */
+
+.footer {
+  height: 200px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #0E0E0E;
+}
+
+.footer-items {
+  margin-top: 20px;
+  padding: 10px;
+
+}
+
+.to-top-btn {
+  font-size: 18px;
+  width: 80px;
+  height: 40px;
+  border: 1px solid #101010;
+  color: white;
+  background-color: #202020;
+}
+
+.social-links {
+  color: #CDCDCD;
+  padding-right: 8px;
+  font-size: 25px;
+}
+
+.hover-blue:hover {
+  color: #3590FF;
+}
+
+.hover-pink:hover {
+  color: #CE30E8;
+}
+
+.hover-gray:hover {
+  color: #6F6F6F;
+}
+
+
+/* end footer */
+
+
+
+
+.title {letter-spacing: 3px;}
+.hr {border: 0;border-top: 2px dashed #B6B6B6;}
+.space-right {margin-right: 10px;}
+.italic {font-style: italic;}
+.bold {font-weight: bold;}
+
+
+@media (max-width: 767px) {.hide-mobile {display: none;}}  /* window size is grater than 767 then true */
+@media (min-width: 767px) {.hide-tablet {display: none;}}  /* window size is lesser than  767 then true */
+@media (min-width: 992px) {.hide-desktop {display: none;}} 
+
+
