@@ -1,6 +1,28 @@
 
 /*   V1   */
 
+function httpRequest(url) { 
+  var tmp;
+
+  function request(url) {
+    const xhr = new XMLHttpRequest();
+    xhr.onload = function () 
+    {
+    
+    tmp = this.responseText;
+  }
+  xhr.open('GET', url, false);
+  xhr.send();
+  
+  }
+
+  request(url);
+  return tmp;
+  // returns responseText
+}
+
+
+
 function toggleMenu() {
     var menuHolder = document.getElementById('sideMenuItemsHolder').style;
     var spanLogoText = document.getElementById('display-logo-middle').style;

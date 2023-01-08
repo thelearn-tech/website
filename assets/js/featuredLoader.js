@@ -1,8 +1,9 @@
 
 // automatic repo and description and img for the repo loader
-
+// using the httpRequest() from main.js
 
 /*   V1   */
+
 
 var featuredRepoTitle = ["Friday", "Hacker Theme", "Web Terminal", "Github Stat Card"] // for title
 var featuredRepoUrlName = ["Friday", "hacker-theme", "web-terminal", "github-stat-card"]; // for everything else
@@ -17,26 +18,6 @@ window.mobileCheck = function() {
   return check;
 };
 
-
-function httpRequest(url) {
-  var tmp;
-
-  function request(url) {
-    const xhr = new XMLHttpRequest();
-    xhr.onload = function () 
-    {
-    
-    tmp = this.responseText;
-  }
-  xhr.open('GET', url, false);
-  xhr.send();
-  
-  }
-
-  request(url);
-  return tmp;
-  // returns responseText
-}
 
 
 function renderFeaturedRepos(name, description, repo, mobile) {
