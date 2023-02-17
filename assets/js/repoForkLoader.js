@@ -5,7 +5,7 @@
 
 /*  V1  */
 var apiURL = "https://api.github.com/users/thelearn-tech/repos"
-var data = JSON.parse(httpRequest("/repo.json"))
+var data = JSON.parse(httpRequest(apiURL))
 
 var forkCount = 0;
 
